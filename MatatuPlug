@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatatuPlug™</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cookie Consent -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>🍪 This app uses cookies to improve your experience. By continuing, you agree to our Terms & Privacy Policy.</p>
+    <button id="accept-cookies">Accept</button>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>MatatuPlug™</h1>
+    <p>Connecting Artists with Matatus for Music Promotion</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>MatatuPlug™ is your one-stop platform to distribute music to Matatus across Kenya. We help artists get their music heard by thousands of daily commuters.</p>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2>Packages</h2>
+    <div class="packages">
+      <div class="card">
+        <h3>Bronze</h3>
+        <p>Ksh 5,000 (Video)</p>
+        <p>Ksh 500 (Audio)</p>
+        <button class="select-package" data-package="Bronze">Choose Bronze</button>
+      </div>
+      <div class="card">
+        <h3>Silver</h3>
+        <p>Ksh 8,000 (Video)</p>
+        <p>Ksh 1,500 (Audio)</p>
+        <button class="select-package" data-package="Silver">Choose Silver</button>
+      </div>
+      <div class="card">
+        <h3>Gold</h3>
+        <p>Ksh 30,000 (Video)</p>
+        <p>Ksh 5,000 (Audio)</p>
+        <button class="select-package" data-package="Gold">Choose Gold</button>
+      </div>
+      <div class="card">
+        <h3>Gold Premium</h3>
+        <p>Ksh 70,000 (Video Only)</p>
+        <button class="select-package" data-package="Gold Premium">Choose Gold Premium</button>
+      </div>
+    </div>
+    <p>Payments via Paybill: <strong>4101847</strong> or <strong>006536</strong></p>
+  </section>
+
+  <!-- Upload Section -->
+  <section id="upload">
+    <h2>Upload Your Music</h2>
+    <form id="uploadForm">
+      <label>Artist Name:</label>
+      <input type="text" required>
+      
+      <label>Song Title:</label>
+      <input type="text" required>
+      
+      <label>YouTube/Audio Link:</label>
+      <input type="url" required>
+      
+      <label>Album Cover:</label>
+      <input type="file" accept="image/*" required>
+
+      <label>Selected Package:</label>
+      <input type="text" id="packageField" readonly placeholder="Choose a package above" required>
+      
+      <button type="submit">Submit for Distribution</button>
+    </form>
+  </section>
+
+  <!-- Sample Songs -->
+  <section id="samples">
+    <h2>Sample Distributed Songs</h2>
+    <div class="songs">
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/3zGEGOJ4WTw" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/3NKBDTwtDzE" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/fRh_vgS2dFE" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Confirmation Message -->
+  <p id="confirmation-msg" class="hidden">✅ Thank you for your submission! Our team will confirm via WhatsApp: <strong>+254 757 268 059</strong></p>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MatatuPlug™</p>
+    <a href="https://wa.me/254757268059?text=Hello%20MatatuPlug%2C%20I%20have%20a%20query" class="whatsapp-btn" target="_blank">💬 Contact Us on WhatsApp</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
